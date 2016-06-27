@@ -1,2 +1,2 @@
 # bmob-android-sdk-demo
-BmobSDK的示例Demo
+BmobSDK的AndroidStudio版示例Demo
