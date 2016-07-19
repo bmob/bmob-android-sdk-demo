@@ -36,7 +36,7 @@ public class ActAutoUpdate extends BaseActivity {
 
 		mListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
-			public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				testAutoUpdate(position + 1);
 			}
 		});

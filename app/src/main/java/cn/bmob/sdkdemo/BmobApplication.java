@@ -8,7 +8,7 @@ public class BmobApplication extends Application {
 	/**
 	 * SDK初始化也可以放到Application中
 	 */
-	public static String APPID ="";
+	public static String APPID ="3124f50157a5df138aba77a85e1d8909";
 
 	@Override
 	public void onCreate() {

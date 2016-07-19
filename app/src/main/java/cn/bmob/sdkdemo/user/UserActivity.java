@@ -48,7 +48,7 @@ public class UserActivity extends BaseActivity {
 		mListview.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
+									int position, long id) {
 				testBmob(position + 1);
 			}
 		});

@@ -173,12 +173,12 @@ public class QueryActivity extends BaseActivity {
 
 	public void queryOne(){
 		BmobQuery<Movie> query = new BmobQuery();
-		query.getObject("5f1042e183", new QueryListener<Movie>() {
+		query.getObject("caa86e4ab8", new QueryListener<Movie>() {
 
 			@Override
 			public void done(Movie movie, BmobException e) {
 				if(e==null){
-					log(movie.getFile().getFileUrl());
+					log(movie.getFile().getFileUrl()+","+movie.getName());
 				}else{
 					loge(e);
 				}

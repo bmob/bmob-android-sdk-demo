@@ -47,7 +47,7 @@ public class ActBmobPush extends BaseActivity {
 		mListview.setAdapter(mAdapter);
 		mListview.setOnItemClickListener(new OnItemClickListener() {
 			@Override
-			public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				testBmob(position + 1);
 			}
 		});
