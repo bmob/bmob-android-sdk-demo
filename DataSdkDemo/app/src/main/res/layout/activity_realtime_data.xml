@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.realtime.RealTimeDataActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_connect_listen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        android:text="连接并监听"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_update_chat"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="更新Chat表"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_info"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

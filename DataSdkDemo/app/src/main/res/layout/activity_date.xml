@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_equal"
+                android:text="等于"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="不等于"
+                android:id="@+id/btn_not_equal"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_less"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="之前"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="之后"
+                android:id="@+id/btn_large"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="之前包括"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/btn_equal_less"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_equal_large"
+                android:text="之后包括"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="期间"
+                android:id="@+id/btn_equal_large_equal_less"
+                android:layout_margin="8dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

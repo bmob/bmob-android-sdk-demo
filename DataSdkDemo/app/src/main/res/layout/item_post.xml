@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="left"
+        android:text="帖子标题"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="帖子内容"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_author_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="right"
+        android:text="作者昵称"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@color/colorAccent"/>
+
+</LinearLayout>

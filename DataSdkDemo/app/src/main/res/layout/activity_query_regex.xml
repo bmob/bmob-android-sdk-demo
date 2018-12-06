@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_regex"
+                android:layout_width="match_parent"
+                android:text="正则搜索"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_contains"
+                android:text="是否包含，模糊搜索"
+                android:layout_width="match_parent"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_starts"
+                android:layout_width="match_parent"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="以开头"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_ends"
+                android:layout_width="match_parent"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="以结尾"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

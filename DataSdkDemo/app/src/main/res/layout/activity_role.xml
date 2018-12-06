@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.UserActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_query_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        android:text="设置数据的公共访问权限"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_role"
+        android:layout_width="match_parent"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="设置数据的用户访问权限"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_remove_role"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="设置数据的用户访问权限"/>
+</LinearLayout>

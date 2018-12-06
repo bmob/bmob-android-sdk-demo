@@ -1,0 +1,43 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+ext {
+    //全局变量控制，可在module中的build.gradle文件通过rootProject.ext.xxx开头来使用
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    //主程序版本
+    targetSdkVersion = 28
+    minSdkVersion = 14
+    versionCode = 68
+    versionName = "3.6.8"
+}

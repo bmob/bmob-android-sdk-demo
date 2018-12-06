@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_count"
+                android:layout_width="match_parent"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="查询结果计数"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_compound_and"
+                android:layout_width="match_parent"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="复合查询：与查询"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_compound_or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:text="复合查询：或查询"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,102 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_single_curd"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="单条数据的增删改查"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_multi_crud"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="多条数据的增删改查"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_where"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="条件查询"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_regex"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="正则查询"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_statistics"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="统计查询"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_bql"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="BQL查询"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_table"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="表查询"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cache"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="缓存查询"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

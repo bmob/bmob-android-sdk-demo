@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_contain"
+
+                android:text="包含"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:text="不包含"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_not_contain"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="包含所有"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/btn_contain_all"
+                android:layout_margin="8dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
