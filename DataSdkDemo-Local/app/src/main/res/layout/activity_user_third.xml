@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_third_signup_login"
+        android:layout_width="match_parent"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="第三方平台一键注册或登录"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:id="@+id/btn_third_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="关联第三方平台账号"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_third_unbind"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="解除关联第三方平台账号"/>
+
+
+</LinearLayout>

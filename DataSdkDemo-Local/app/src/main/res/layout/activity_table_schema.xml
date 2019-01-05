@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.UserActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_table_schema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="某张表的表信息"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_all_table_schema"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="所有表的表信息"/>
+
+
+</LinearLayout>

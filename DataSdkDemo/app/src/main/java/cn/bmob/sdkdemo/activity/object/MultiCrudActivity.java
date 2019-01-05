@@ -16,6 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cn.bmob.sdkdemo.R;
 import cn.bmob.sdkdemo.bean.Category;
+import cn.bmob.sdkdemo.bean.User;
 import cn.bmob.v3.BmobBatch;
 import cn.bmob.v3.BmobObject;
 import cn.bmob.v3.BmobQuery;
@@ -174,6 +175,33 @@ public class MultiCrudActivity extends AppCompatActivity {
         });
     }
 
+
+
+
+
+    public interface OnQueryListener<T>{
+        void onSuccess(List<T> ts);
+        void onError(BmobException ex);
+    }
+
+
+
+    public void query(final OnQueryListener onQueryListener){
+        BmobQuery<Category> bmobQuery = new BmobQuery<>();
+        bmobQuery.findObjects(new FindListener<Category>() {
+            @Override
+            public void done(List<Category> categories, BmobException e) {
+                if (e == null) {
+                    onQueryListener.onSuccess(categories);
+                    Snackbar.make(mBtnQuery, "查询成功：" + categories.size(), Snackbar.LENGTH_LONG).show();
+                } else {
+                    Log.e("BMOB", e.toString());
+                    onQueryListener.onError(e);
+                    Snackbar.make(mBtnQuery, e.getMessage(), Snackbar.LENGTH_LONG).show();
+                }
+            }
+        });
+    }
     /**
      * 查询多条数据
      */
@@ -199,7 +227,25 @@ public class MultiCrudActivity extends AppCompatActivity {
                 save();
                 break;
             case R.id.btn_query:
-                query();
+//                query();
+
+
+
+
+
+                query(new OnQueryListener() {
+                    @Override
+                    public void onSuccess(List list) {
+                        System.out.println("success "+list.size());
+                    }
+
+                    @Override
+                    public void onError(BmobException ex) {
+
+                        System.err.println("error "+ex.getMessage());
+
+                    }
+                });
                 break;
             case R.id.btn_update:
                 update();

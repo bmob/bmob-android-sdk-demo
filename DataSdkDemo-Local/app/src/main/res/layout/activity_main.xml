@@ -1,0 +1,178 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_user"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="用户管理"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_installation"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="设备管理"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_file"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="文件管理"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_relevance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:text="数据关联"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_data_operation"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="数据操作"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_security"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="数据安全"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_realtime"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="数据监听"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cloud"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="云端逻辑"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="应用更新"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_sms"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="短信操作"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:text="图文消息"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:text="地理位置"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_array"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="数组操作"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_margin="8dp"
+                android:text="时间操作"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_table"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="表信息"/>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_other"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="其他操作"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

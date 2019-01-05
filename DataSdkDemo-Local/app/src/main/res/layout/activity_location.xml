@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_update_location"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="更新用户地理位置信息"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="查询用户地理位置信息"
+                android:id="@+id/btn_get_location"
+                android:layout_margin="8dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/btn_query_miles"
+                android:text="查询指定坐标指定英里范围内的用户"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="查询指定坐标指定公里范围内的用户"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/btn_query_kilometers"
+                android:layout_margin="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="查询指定坐标指定半径内的用户"
+                android:id="@+id/btn_query_radians"
+                android:layout_margin="8dp"/>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="查询最接近某个坐标的用户"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/btn_query_near"
+                android:layout_margin="8dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="查询矩形范围内的用户"
+
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/btn_query_box"
+                android:layout_margin="8dp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

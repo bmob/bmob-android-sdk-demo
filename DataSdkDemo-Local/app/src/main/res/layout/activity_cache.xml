@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.user.UserActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cache_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        android:text="查询是否存在当前查询条件的缓存数据"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cache_clear"
+        android:layout_width="match_parent"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="清除当前查询条件的缓存数据"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cache_clear_all"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="清除所有查询结果的缓存数据"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cache_set_max_age"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="设置缓存的最长毫秒时间，上限为5小时"/>
+</LinearLayout>

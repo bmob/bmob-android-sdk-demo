@@ -41,42 +41,17 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
-    /**
-     * bmob data sdk：
-     * 此远程下载的sdk包含了BmobSDK_xxxx.jar、libbmob.so、自动更新资源文件等内容，如果使用了远程下载sdk的方式则不需要本地依赖！
-     * 建议开发者们使用此方式！
-     */
-    implementation 'cn.bmob.android:bmob-sdk:3.6.8-rc4'
+    implementation 'cn.bmob.android:bmob-sdk:3.6.8-rc7'
 
-    /**
-     * rx java
-     */
     implementation "io.reactivex.rxjava2:rxjava:2.2.2"
-    /**
-     * rx android
-     */
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
-    /**
-     * okio
-     */
     implementation 'com.squareup.okio:okio:2.1.0'
-    /**
-     * gson
-     */
     implementation 'com.google.code.gson:gson:2.8.5'
-
-    /**
-     * material design
-     */
     implementation 'com.google.android.material:material:1.0.0-rc01'
-
+    implementation 'androidx.core:core:1.0.0+'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
     /**
-     * androidx core
-     */
-    implementation "androidx.core:core:1.0.0+"
-
-    /**
-     *  butter knife
+     * ButterKnife
      */
     implementation 'com.jakewharton:butterknife:9.0.0-rc1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
