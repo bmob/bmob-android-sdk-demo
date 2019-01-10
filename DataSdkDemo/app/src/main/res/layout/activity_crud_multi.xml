@@ -67,4 +67,14 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:text="查询多条数据"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_query_sync"
+        android:layout_width="match_parent"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="同步查询多条数据"/>
 </LinearLayout>
