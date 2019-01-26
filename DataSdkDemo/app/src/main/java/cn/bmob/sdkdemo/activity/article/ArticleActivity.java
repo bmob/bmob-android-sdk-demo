@@ -51,6 +51,10 @@ public class ArticleActivity extends AppCompatActivity {
             public void done(List<BmobArticle> object, BmobException e) {
                 if (e == null) {
                     Snackbar.make(mBtnQueryArticle, "查询成功：" + object.size(), Snackbar.LENGTH_LONG).show();
+                    for (BmobArticle article :object){
+                        System.out.println(article.getTitle());
+                        System.out.println(article.getUrl());
+                    }
                 } else {
                     Snackbar.make(mBtnQueryArticle, "查询失败：" + e.getMessage(), Snackbar.LENGTH_LONG).show();
                 }
