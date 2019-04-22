@@ -136,6 +136,7 @@ public class FileManagerActivity extends AppCompatActivity {
                     chooseFile(requestCode);
                     break;
                 case REQUEST_UPLOAD_MULTI:
+                    chooseMultiFile(requestCode);
                     break;
                 case REQUEST_UPLOAD_MULTI_TO_TABLE:
                     break;
@@ -149,6 +150,11 @@ public class FileManagerActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+
+    private void chooseMultiFile(int requestCode) {
+
+
     }
 
 
@@ -307,6 +313,27 @@ public class FileManagerActivity extends AppCompatActivity {
                 } else {
                     Snackbar.make(mBtnUploadSingleToTable, "上传失败：" + e.getMessage(), Snackbar.LENGTH_LONG).show();
                 }
+            }
+        });
+    }
+
+
+    private void uploadMultiFile(){
+        String[] files = new String[]{};
+        BmobFile.uploadBatch(files, new UploadBatchListener() {
+            @Override
+            public void onSuccess(List<BmobFile> files, List<String> urls) {
+
+            }
+
+            @Override
+            public void onProgress(int curIndex, int curPercent, int total, int totalPercent) {
+
+            }
+
+            @Override
+            public void onError(int code, String msg) {
+
             }
         });
     }
