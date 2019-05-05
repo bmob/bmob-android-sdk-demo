@@ -20,6 +20,7 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
 
 
+
     <application
         android:name=".BmobApplication"
         android:allowBackup="true"
