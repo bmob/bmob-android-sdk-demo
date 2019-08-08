@@ -37,7 +37,7 @@ ext {
     buildToolsVersion = '28.0.3'
     //主程序版本
     targetSdkVersion = 28
-    minSdkVersion = 14
+    minSdkVersion = 15
     versionCode = 68
     versionName = "3.6.8"
 }
