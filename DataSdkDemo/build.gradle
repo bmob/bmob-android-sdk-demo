@@ -22,6 +22,8 @@ allprojects {
             name 'Google'
         }
         maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+        //备用仓库
+        //maven { url "https://gitee.com/angcyo/bmob-android-sdk/raw/master" }
         google()
     }
 }

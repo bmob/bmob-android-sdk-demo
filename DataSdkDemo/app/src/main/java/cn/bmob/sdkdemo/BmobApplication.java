@@ -4,7 +4,6 @@ import android.app.Application;
 
 import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobConfig;
-import cn.bmob.v3.util.InstallUtil;
 
 /**
  * @author zhangchaozhou
@@ -55,7 +54,7 @@ public class BmobApplication extends Application {
         Bmob.initialize(config);
 
 
-        InstallUtil.setAuthorities("这里替换为你在AndroidManifest.xml配置的fileprovider的值");
+//        InstallUtil.setAuthorities("这里替换为你在AndroidManifest.xml配置的fileprovider的值");
 
 
 
