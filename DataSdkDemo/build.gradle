@@ -10,7 +10,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.android.tools.build:gradle:3.6.2'
     }
 }
 
@@ -21,7 +21,9 @@ allprojects {
             url 'https://maven.google.com/'
             name 'Google'
         }
-        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+
+        maven {url 'https://dl.bintray.com/chaozhouzhang/maven' }
+//        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
         //备用仓库
         //maven { url "https://gitee.com/angcyo/bmob-android-sdk/raw/master" }
         google()
