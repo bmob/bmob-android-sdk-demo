@@ -107,6 +107,11 @@ public class RealTimeDataActivity extends AppCompatActivity  {
                     Toast.makeText(RealTimeDataActivity.this, "监听到更新：" + data.optString("name") + "-" + data.optString("content"), Toast.LENGTH_SHORT).show();
                 }
             }
+
+            @Override
+            public void onDisconnectCompleted(Client client) {
+                System.out.println(client.toString()+"：已离线");
+            }
         });
     }
 
