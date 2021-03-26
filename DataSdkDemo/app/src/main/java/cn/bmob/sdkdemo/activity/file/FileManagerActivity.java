@@ -81,7 +81,7 @@ public class FileManagerActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.btn_upload_single, R.id.btn_upload_single_to_table, R.id.btn_upload_multi, R.id.btn_upload_multi_to_table, R.id.btn_delete_single})
+    @OnClick({R.id.btn_upload_single, R.id.btn_upload_single_to_table, R.id.btn_upload_multi, R.id.btn_upload_multi_to_table, R.id.btn_download_single, R.id.btn_delete_single})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_upload_single:
@@ -522,5 +522,6 @@ public class FileManagerActivity extends AppCompatActivity {
             }
         });
     }
+
 
 }
