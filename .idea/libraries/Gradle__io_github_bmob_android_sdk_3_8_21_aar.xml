@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.bmob:android-sdk:3.8.21@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/83c3b7bc1acf499f5ee36140646c180c/transformed/android-sdk-3.8.21/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/83c3b7bc1acf499f5ee36140646c180c/transformed/android-sdk-3.8.21/jars/libs/BmobSDK_3.8.20.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/83c3b7bc1acf499f5ee36140646c180c/transformed/android-sdk-3.8.21/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/83c3b7bc1acf499f5ee36140646c180c/transformed/android-sdk-3.8.21/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

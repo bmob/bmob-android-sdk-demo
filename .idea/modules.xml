@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BmobDemo.iml" filepath="$PROJECT_DIR$/BmobDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jar/jar.iml" filepath="$PROJECT_DIR$/jar/jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bmob-android-sdk-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/bmob-android-sdk-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/bmob-android-sdk-demo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/bmob-android-sdk-demo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/bmob-android-sdk-demo.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/bmob-android-sdk-demo.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/bmob-android-sdk-demo.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/bmob-android-sdk-demo.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/bmob-android-sdk-demo.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/bmob-android-sdk-demo.app.unitTest.iml" />
     </modules>
   </component>
 </project>
