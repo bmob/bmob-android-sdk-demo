@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.object.QueryTableActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_query_table_object"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onQueryObjectByTable"
+        android:text="根据表名查询单条数据"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_query_table_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorPrimary"
+        android:onClick="onQueryArrayByTable"
+        android:text="根据表名查询多条数据"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

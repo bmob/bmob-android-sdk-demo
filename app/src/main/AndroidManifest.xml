@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".BmobApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bmobandroidsdkdemo"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.file.FileManagerActivity"/>
+        <activity android:name=".activity.user.sms.UserResetSmsActivity"/>
+        <activity android:name=".activity.user.sms.UserBindActivity"/>
+        <activity android:name=".activity.array.ArrayActivity"/>
+        <activity android:name=".activity.date.DateActivity"/>
+        <activity android:name=".activity.article.ArticleActivity"/>
+        <activity android:name=".activity.user.email.UserEmailActivity"/>
+        <activity android:name=".activity.user.sms.UserMainActivity"/>
+        <activity android:name=".activity.user.third.UserThirdActivity"/>
+        <activity android:name=".activity.user.normal.UserNormalActivity"/>
+        <activity android:name=".activity.user.sms.UserSignUpOrLoginSmsActivity"/>
+        <activity android:name=".activity.user.sms.UserSignUpPasswordAndSmsActivity"/>
+        <activity android:name=".activity.user.sms.UserLoginSmsActivity"/>
+        <activity android:name=".activity.user.sms.UserSignUpPasswordActivity"/>
+        <activity android:name=".activity.user.sms.UserUnBindActivity"/>
+        <activity android:name=".activity.user.sms.UserLoginPasswordActivity"/>
+        <activity android:name=".activity.user.sms.UserResetPasswordActivity"/>
+        <activity android:name=".activity.object.SingleCrudActivity"/>
+        <activity android:name=".activity.object.QueryConditionActivity"/>
+        <activity android:name=".activity.object.QueryStatisticActivity"/>
+        <activity android:name=".activity.object.QueryBqlActivity"/>
+        <activity android:name=".activity.user.UserActivity"/>
+        <activity android:name=".activity.location.LocationActivity"/>
+        <activity android:name=".activity.security.acl.AclActivity"/>
+        <activity android:name=".activity.relevance.PostsActivity"/>
+        <activity android:name=".activity.cloud.CloudActivity"/>
+        <activity android:name=".activity.table.TableActivity"/>
+        <activity android:name=".activity.other.OtherFunctionActivity"/>
+        <activity android:name=".activity.realtime.RealTimeDataActivity"/>
+        <activity android:name=".activity.installation.InstallationActivity"/>
+        <activity android:name=".activity.object.DataOperationActivity"/>
+        <activity android:name=".activity.object.QueryCacheActivity"/>
+        <activity android:name=".activity.object.QueryTableActivity"/>
+        <activity android:name=".activity.object.QueryRegexActivity"/>
+        <activity android:name=".activity.object.QueryWhereActivity"/>
+        <activity android:name=".activity.object.MultiCrudActivity"/>
+        <activity android:name=".activity.security.SecurityActivity"/>
+        <activity android:name=".activity.security.role.BmobRoleActivity"/>
+        <activity android:name=".activity.security.SignVerifyActivity"/>
+        <activity android:name=".activity.update.AppVersionUpdateActivity"/>
+        <activity android:name=".activity.sms.SmsActivity"/>
+
+        <!--添加应用版本更新页面-->
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="cn.bmob.sdkdemo.BmobContentProvider">
+        </provider>
+    </application>
+
+</manifest>
